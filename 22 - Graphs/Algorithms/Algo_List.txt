@@ -1,0 +1,2 @@
+1. Dijkstra's Algorithm  --> Shortest distance from the source to all vertices  (Weight > 0)
+2. Bellman Ford Algorithm --> Shortest distance from the source to all vertices  (Weight < 0)

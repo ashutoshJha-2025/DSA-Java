@@ -1,0 +1,7 @@
+What is a BST?
+--> Left SubTree Nodes < Root
+--> Right SubTree Nodes > Root
+--> No Duplicates.
+
+Special Property
+--> Inorder Traversal of BST gives a Sorted sequence.
