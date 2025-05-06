@@ -5,11 +5,13 @@ public class allPaths_SRCtoTarget extends creatingGraph_nonWeighted {
         int v = 7;
         ArrayList<Edge> graph[] = new ArrayList[v];
         boolean vis[] = new boolean[v];
-        directedGraph1(graph);   
-        /*      0 -> 1 -> 2 -> 3 -> 4 -> 5 -> 6 ->7
-                          ^         |
-                          |         | 
-                          -----------                              
+         undirectedGraph1(graph);   
+        /*
+               1 --- 3
+              /      | \
+             0       |  5 -- 6
+              \      | /
+               2 --- 4
         */
         int src = 0, tar = 6;
         printAllPath(graph, vis, src, "0", tar);
