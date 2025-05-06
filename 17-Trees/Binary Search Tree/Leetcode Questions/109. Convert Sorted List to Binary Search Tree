@@ -1,0 +1,21 @@
+class Solution {
+    public TreeNode sortedListToBST(ListNode head) {
+        List<Integer> nums = new ArrayList<>();
+        ListNode temp = head;
+        while (temp != null) {
+            nums.add(temp.val);
+            temp = temp.next;
+        }
+        return helper(nums, 0, nums.size() - 1);
+    }
+
+    private TreeNode helper(List<Integer> nums, int lo, int hi) {
+        if (lo > hi)
+            return null;
+        int mid = lo + (hi - lo) / 2;
+        TreeNode root = new TreeNode(nums.get(mid));
+        root.left = helper(nums, lo, mid - 1);
+        root.right = helper(nums, mid + 1, hi);
+        return root;
+    }
+}
