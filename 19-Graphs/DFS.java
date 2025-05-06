@@ -1,19 +1,12 @@
 import java.util.*;
 
-<<<<<<< HEAD
-public class DFS extends creatingGraph {
-=======
 public class DFS extends creatingGraph_nonWeighted {
->>>>>>> 5df93d4 (update)
     public static void main(String[] args) {
         int v = 7;
         ArrayList<Edge> graph[] = new ArrayList[v];
         boolean vis[] = new boolean[v];
-<<<<<<< HEAD
-        createGraph1(graph);   
-=======
+
         undirectedGraph1(graph);   
->>>>>>> 5df93d4 (update)
         /*
                1 --- 3
               /      | \
