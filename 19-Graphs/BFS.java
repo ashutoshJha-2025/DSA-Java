@@ -1,18 +1,10 @@
 import java.util.*;
 
-<<<<<<< HEAD
-public class BFS extends creatingGraph{
-    public static void main(String[] args) {
-        int v = 7;
-        ArrayList<Edge> graph[] = new ArrayList[v];
-        createGraph1(graph);   
-=======
 public class BFS extends creatingGraph_nonWeighted{
     public static void main(String[] args) {
         int v = 7;
         ArrayList<Edge> graph[] = new ArrayList[v];
         undirectedGraph1(graph);   
->>>>>>> 5df93d4 (update)
         /*
                1 --- 3
               /      | \
